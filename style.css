@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"); /*Font Header e Titulos*/
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Bungee&family=Fredoka:wght@300..700&family=Goldman:wght@400;700&family=Lilita+One&family=Special+Gothic+Expanded+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"); /*Font info*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Bree+Serif&family=Bungee&family=Fredoka:wght@300..700&family=Goldman:wght@400;700&family=Lilita+One&family=Special+Gothic+Expanded+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"); /*Font Body*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Bree+Serif&family=Bungee&family=Fredoka:wght@300..700&family=Goldman:wght@400;700&family=Lilita+One&family=Permanent+Marker&family=Special+Gothic+Expanded+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"); /*Font Footer*/
+
+#sobre,
+#projetos,
+#contato,
+#inicio {
+  scroll-margin-top: 70px;
+  position: relative;
+  padding-top: 120px;
+  margin-top: -70px;
+}
+body {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  cursor: url("img/cursor.png"), auto;
+  font-size: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  font-family: "Goldman", sans-serif;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: url("img/cursor2.png"), auto;
+}
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  margin-top: 50px;
+}
+
+.info h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Acme", sans-serif;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #888;
+  max-width: 400px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.perfil-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.perfil-img img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.ferramentas {
+  padding: 40px 60px;
+}
+
+.ferramentas h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #999;
+  font-weight: bold;
+}
+.seta-scroll {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: #ffffff;
+  animation: anima-seta 0.9s infinite alternate ease-in-out;
+}
+@keyframes anima-seta {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.sobre,
+.projetos,
+.contato {
+  padding: 60px;
+  background-color: #0f0f0f;
+}
+
+.sobre h2,
+.projetos h2,
+.contato h2 {
+  font-size: 30px;
+  color: #ffc803;
+  font-family: "Goldman", sans-serif;
+}
+
+.sobre p,
+.contato p {
+  color: #aaa;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: justify;
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+}
+.sobre-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: -500px;
+  margin-left: 500px;
+}
+.sobre-img img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.projetos .projetos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.projeto-card {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 12px;
+}
+
+.projeto-card:hover .projetos {
+  background-color: #292929;
+  transform: scale(1.02);
+  transition: background-color 0.3s ease;
+}
+
+.projetos .projetos {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.projetos .projetos h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.projetos .projetos p {
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.contato {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+.contato a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  cursor: url("img/cursor2.png"), auto;
+}
+.contato i {
+  font-size: 25px;
+  margin: 10px;
+  cursor: url("img/cursor2.png"), auto;
+}
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 20px 60px;
+  font-size: 15px;
+  font-family: "Vollkorn", serif;
+}
+footer p{
+    color: rgb(122, 121, 121);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #1a1a1a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+.logo {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: #999;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo:hover {
+  background-color: #ffc800;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ffc800;
+}
