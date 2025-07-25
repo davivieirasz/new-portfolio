@@ -12,6 +12,7 @@
   padding-top: 120px;
   margin-top: -70px;
 }
+
 body {
   margin: 0;
   font-family: "Fredoka", sans-serif;
@@ -48,6 +49,7 @@ nav ul li a {
   font-size: 14px;
   cursor: url("img/cursor2.png"), auto;
 }
+
 .inicio {
   display: flex;
   justify-content: space-between;
@@ -74,12 +76,14 @@ nav ul li a {
   margin-bottom: 20px;
   line-height: 1.6;
 }
+
 .perfil-img {
   flex: 1;
   display: flex;
   justify-content: center;
   margin-top: 200px;
 }
+
 .perfil-img img {
   border-radius: 50%;
   width: 300px;
@@ -112,6 +116,7 @@ nav ul li a {
   color: #999;
   font-weight: bold;
 }
+
 .seta-scroll {
   position: absolute;
   bottom: 10px;
@@ -121,6 +126,7 @@ nav ul li a {
   color: #ffffff;
   animation: anima-seta 0.9s infinite alternate ease-in-out;
 }
+
 @keyframes anima-seta {
   0% {
     transform: translateY(-20px);
@@ -132,6 +138,7 @@ nav ul li a {
     transform: translateY(-20px);
   }
 }
+
 .sobre,
 .projetos,
 .contato {
@@ -156,6 +163,7 @@ nav ul li a {
   font-family: "Fredoka", sans-serif;
   font-size: 20px;
 }
+
 .sobre-img {
   flex: 1;
   display: flex;
@@ -163,16 +171,20 @@ nav ul li a {
   margin-top: -500px;
   margin-left: 500px;
 }
+
 .sobre-img img {
   border-radius: 50%;
   width: 300px;
   height: 300px;
   object-fit: cover;
 }
-.projetos .projetos-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+.projetos-lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
+  padding: 20px;
 }
 
 .projeto-card {
@@ -180,12 +192,12 @@ nav ul li a {
   display: block;
   transition: transform 0.3s ease, background-color 0.3s ease;
   border-radius: 12px;
-}
-
-.projeto-card:hover .projetos {
-  background-color: #292929;
-  transform: scale(1.02);
-  transition: background-color 0.3s ease;
+  cursor: url("img/cursor2.png"), auto;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .projetos .projetos {
@@ -193,17 +205,47 @@ nav ul li a {
   border: 1px solid #333;
   padding: 20px;
   border-radius: 12px;
+  text-align: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projetos .projetos img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.projeto-card:hover .projetos {
+  background-color: #292929;
+  transform: scale(1.02);
 }
 
 .projetos .projetos h3 {
   color: #ffffff;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .projetos .projetos p {
   color: #aaa;
+  font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.em-construcao {
+  color: #ff9900;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 22px;
 }
 
 .contato {
@@ -213,6 +255,7 @@ nav ul li a {
   font-weight: bold;
   padding: 5px;
 }
+
 .contato a {
   text-align: center;
   color: white;
@@ -221,11 +264,13 @@ nav ul li a {
   padding: 5px;
   cursor: url("img/cursor2.png"), auto;
 }
+
 .contato i {
   font-size: 25px;
   margin: 10px;
   cursor: url("img/cursor2.png"), auto;
 }
+
 footer {
   background-color: #1a1a1a;
   text-align: center;
@@ -233,23 +278,29 @@ footer {
   font-size: 15px;
   font-family: "Vollkorn", serif;
 }
-footer p{
-    color: rgb(122, 121, 121);
+
+footer p {
+  color: rgb(122, 121, 121);
 }
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #1a1a1a;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #ffffff;
   border-radius: 10px;
   border: 2px solid #1a1a1a;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: #ffffff;
 }
+
 .logo {
   background-color: #1f1f1f;
   border: 1px solid #333;
@@ -262,9 +313,30 @@ footer p{
   align-items: center;
   justify-content: center;
 }
+
 .logo:hover {
   background-color: #ffc800;
   color: #000;
   transform: scale(1.05);
   box-shadow: 0 0 12px #ffc800;
+}
+
+.inicio {
+  margin-bottom: 90px;
+}
+
+.ferramentas {
+  margin-bottom: 100px;
+}
+
+.sobre {
+  margin-bottom: 190px;
+}
+
+.projetos {
+  margin-bottom: 100px;
+}
+
+.contato {
+  margin-bottom: 60px;
 }
