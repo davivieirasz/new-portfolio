@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"); /*Font Header e Titulos*/
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Bungee&family=Fredoka:wght@300..700&family=Goldman:wght@400;700&family=Lilita+One&family=Special+Gothic+Expanded+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"); /*Font info*/
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Bree+Serif&family=Bungee&family=Fredoka:wght@300..700&family=Goldman:wght@400;700&family=Lilita+One&family=Special+Gothic+Expanded+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"); /*Font Body*/
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Bree+Serif&family=Bungee&family=Fredoka:wght@300..700&family=Goldman:wght@400;700&family=Lilita+One&family=Permanent+Marker&family=Special+Gothic+Expanded+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"); /*Font Footer*/
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Abril+Fatface&family=Bebas+Neue&family=Bree+Serif&family=Bungee&family=Fredoka:wght@300..700&family=Goldman:wght@400;700&family=Lilita+One&family=Permanent+Marker&family=Special+Gothic+Expanded+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
 
 #sobre,
 #projetos,
@@ -59,10 +56,14 @@ nav ul li a {
 }
 
 .info h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Acme", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ff9900;
+  letter-spacing: 1px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px #cc6600;
 }
 
 .subtitle {
@@ -115,28 +116,6 @@ nav ul li a {
   border-radius: 10px;
   color: #999;
   font-weight: bold;
-}
-
-.seta-scroll {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
-  color: #ffffff;
-  animation: anima-seta 0.9s infinite alternate ease-in-out;
-}
-
-@keyframes anima-seta {
-  0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(1px);
-  }
-  100% {
-    transform: translateY(-20px);
-  }
 }
 
 .sobre,
